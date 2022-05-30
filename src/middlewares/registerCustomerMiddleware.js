@@ -5,7 +5,7 @@ export default async function customerValidation(req, res, next) {
   const { cpf } = req.body;
 
   const validation = registerCustomerSchema.validate(req.body, {
-    abortEarly: true,
+    abortEarly: false,
   });
 
   if (validation.error) {
