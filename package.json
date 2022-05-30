@@ -2,6 +2,7 @@
   "name": "projeto15-boardcamp",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.27.2",
@@ -15,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
