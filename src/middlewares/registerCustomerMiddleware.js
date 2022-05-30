@@ -21,7 +21,7 @@ export default async function customerValidation(req, res, next) {
       [cpf]
     );
     if (customer.rows[0]) {
-      return res.sendStatus(409);
+      return res.status(409).send('Usuário já cadastrado');
     }
 
     next();
